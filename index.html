@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form action="" id="reg_form">
+            <p>Registration Form</p>
+            <div>
+                <input type="text" id="form_fname" name="fname" required="">
+                <span class="error_form" id="fname_error_message"></span>
+                <label>
+					First Name
+				</label>
+            </div>
+            <div>
+                <input type="text" id="form_sname" name="sname" required="">
+                <span class="error_form" id="sname_error_message"></span>
+                <label>
+					Second Name
+				</label>
+            </div>
+            <div>
+                <input type="text" id="form_email" name="email" required="">
+                <span class="error_form" id="email_error_message"></span>
+                <label>Email id</label>
+            </div>
+            <div>
+                <input type="password" id="form_password" name="pw" required="">
+                <span class="error_form" id="password_error_message"></span>
+                <label>Password</label>
+            </div><br>
+            <div>
+                <input type="password" id="form_retype_password" name="" required="">
+                <span class="error_form" id="retype_password_error_message"></span>
+                <label>Re-Enter Password</label>
+            </div>
+            <input type="submit" value="Register" name="" id="btn">
+            <!-- <button type="button" id="btn" disabled> Register</button> -->
+        </form>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
